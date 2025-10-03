@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  margin: 50px auto;
+}
+.App input {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+}
+.App .results {
+  margin: 20px;
+}
+.App h2 {
+  margin: 20px;
+}
+.App .phonetic {
+  display: block;
+  margin-bottom: 20px;
+}
+.App strong {
+  font-size: 20px;
+}
