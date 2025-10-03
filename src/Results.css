@@ -1,0 +1,28 @@
+button {
+  border: none;
+  background-color: #ddb398;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+button:hover {
+  color: #ddb398;
+  background-color: #6e4921;
+  transition: all 200ms ease-in-out;
+}
+.phonetic {
+  font-style: italic;
+  font-size: 20px;
+  position: relative;
+  top: 6px;
+  font-weight: 600;
+  color: #332211a2;
+  margin-left: 20px;
+}
+.word-section {
+  display: inline-flex;
+  margin: 15px 0px;
+  margin-left: 40px;
+}

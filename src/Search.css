@@ -1,0 +1,15 @@
+h1 {
+  font-size: 25px;
+  text-align: start;
+  margin-left: 40px;
+}
+input {
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  width: 90%;
+  margin: 10px 20px;
+  background-color: #d9b9a46b;
+  color: #332211;
+  font-size: 20px;
+}

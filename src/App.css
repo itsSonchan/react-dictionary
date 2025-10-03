@@ -1,31 +1,31 @@
+body {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/419/original/pxfuel.jpg?1759518964);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .App {
   text-align: center;
-  margin: 50px auto;
+  margin: 90px auto 0px;
+  color: #332211;
 }
-.App input {
+
+.App a {
+  color: #332211aa;
+  text-decoration: none;
+}
+.App section {
+  background-color: #ede0d4f6;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 40px;
   border-radius: 5px;
-  border: none;
-  padding: 10px;
-  margin: 10px 20px;
-}
-.App .results {
-  margin: 20px;
-}
-.App h2 {
-  margin: 20px;
-}
-.App .phonetic {
-  display: block;
-  margin-bottom: 20px;
-}
-.App strong {
-  font-size: 20px;
 }
 .App footer {
-  margin: 50px;
-  font-size: 12px;
-}
-.App a {
-  color: black;
-  text-decoration: none;
+  background-color: #ede0d4e4;
+  border-radius: 5px;
+  max-width: 800px;
+  margin: 40px auto 40px;
+  padding: 10px;
+  font-size: 15px;
+  font-style: italic;
 }

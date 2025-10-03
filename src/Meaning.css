@@ -1,0 +1,13 @@
+strong {
+  font-size: 20px;
+  display: block;
+  margin: 20px auto;
+}
+.meaning {
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+em {
+  color: #3322119d;
+}
