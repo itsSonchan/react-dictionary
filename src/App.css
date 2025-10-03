@@ -6,7 +6,7 @@
   border-radius: 5px;
   border: none;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 20px;
 }
 .App .results {
   margin: 20px;
@@ -20,4 +20,12 @@
 }
 .App strong {
   font-size: 20px;
+}
+.App footer {
+  margin: 50px;
+  font-size: 12px;
+}
+.App a {
+  color: black;
+  text-decoration: none;
 }
