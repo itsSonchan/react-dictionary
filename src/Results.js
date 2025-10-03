@@ -5,7 +5,7 @@ export default function Results(props) {
   if (props.data) {
     return (
       <div>
-        <h2 className="text-capitalize">{props.word}</h2>
+        <h2 className="text-capitalize">{props.data.word}</h2>
         <em className="phonetic">{props.data.phonetic}</em>
         <audio controls>
           <source src={props.data.audio} type="audio/mp3"></source>

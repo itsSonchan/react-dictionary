@@ -15,7 +15,9 @@ export default function Search() {
         phonetic: response.data[0].phonetic,
         meanings: response.data[0].meanings,
         audio: response.data[0].phonetics[0].audio,
+        word: response.data[0].word,
       });
+      console.log(response.data);
     }
     const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     axios.get(url).then(showDictionary);
@@ -31,7 +33,7 @@ export default function Search() {
         ></input>
         <input type="submit"></input>
       </form>
-      <Results data={dictionary} word={word} />
+      <Results data={dictionary} />
     </div>
   );
 }
