@@ -4,7 +4,7 @@ export default function Meaning(props) {
   return (
     <div>
       {" "}
-      <strong>{props.data.partOfSpeech}</strong>
+      <strong className="text-capitalize">{props.data.partOfSpeech}</strong>
       {props.data.definitions.map(function (definition, index) {
         if (index === 0) {
           return (
