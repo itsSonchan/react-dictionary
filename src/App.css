@@ -1,11 +1,12 @@
 body {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/419/original/pxfuel.jpg?1759518964);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/451/original/StockCake-Vintage_Library_Shelves_1759564115.jpg?1759564144https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/451/original/StockCake-Vintage_Library_Shelves_1759564115.jpg?1759564144);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #332211;
 }
 .App {
   text-align: center;
-  margin: 90px auto 0px;
+  margin: 100px auto 0px;
   color: #332211;
 }
 
@@ -15,7 +16,7 @@ body {
 }
 .App section {
   background-color: #ede0d4f6;
-  margin: 20px auto;
+  margin: 40px auto;
   max-width: 800px;
   padding: 40px;
   border-radius: 5px;
