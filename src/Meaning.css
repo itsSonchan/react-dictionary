@@ -11,3 +11,12 @@ strong {
 em {
   color: #3322119d;
 }
+@media screen and (max-width: 700px) {
+  strong {
+    font-size: 17px;
+  }
+  .meaning {
+    font-size: 14px;
+    margin-left: 0px;
+  }
+}

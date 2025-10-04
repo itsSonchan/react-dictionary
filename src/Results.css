@@ -20,12 +20,7 @@ h2 {
 img:hover {
   cursor: pointer;
 }
-h3 {
-  font-size: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
+
 .synonym {
   padding: 10px;
   border: 1px solid #33221123;
@@ -48,6 +43,29 @@ ul {
 .word-photo {
   border-radius: 5px;
 }
-.word-photo:hover {
-  cursor: pointer;
+
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 22px;
+  }
+  .phonetic {
+    font-size: 15px;
+    margin-left: 0;
+  }
+  img .audio {
+    width: 18px;
+    margin-right: 10px;
+  }
+  .synonym {
+    display: none;
+  }
+  h2 {
+    margin-left: 0px;
+  }
+  ul {
+    margin-left: 0px;
+  }
+  .text {
+    margin-right: 7px;
+  }
 }

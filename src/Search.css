@@ -16,3 +16,14 @@ input {
 .error {
   font-size: 20px;
 }
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 17px;
+    margin: 0px;
+  }
+  input {
+    padding: 8px;
+    font-size: 15px;
+    margin-left: 0;
+  }
+}

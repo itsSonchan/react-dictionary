@@ -6,7 +6,7 @@ body {
 }
 .App {
   text-align: center;
-  margin: 100px auto 0px;
+  margin: 100px auto;
   color: #332211;
 }
 
@@ -29,4 +29,12 @@ body {
   padding: 10px;
   font-size: 15px;
   font-style: italic;
+}
+@media screen and (max-width: 700px) {
+  .App footer {
+    font-size: 10px;
+  }
+  .App {
+    margin: 50px 20px;
+  }
 }
