@@ -18,7 +18,7 @@ body {
   background-color: #ede0d4f6;
   margin: 40px auto;
   max-width: 800px;
-  padding: 40px;
+  padding: 40px 40px 20px 40px;
   border-radius: 5px;
 }
 .App footer {

@@ -35,10 +35,19 @@ li {
   list-style: none;
   font-size: 12px;
   background-color: #d9b9a46b;
+  margin-right: 15px;
 }
 ul {
   display: flex;
-  justify-content: space-between;
   padding: 0;
-  margin-left: 20px;
+  margin: 20px;
+}
+.photos {
+  margin-bottom: 25px;
+}
+.word-photo {
+  border-radius: 5px;
+}
+.word-photo:hover {
+  cursor: pointer;
 }

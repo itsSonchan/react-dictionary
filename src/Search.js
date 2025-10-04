@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import "./Search.css";
 import axios from "axios";
 import Results from "./Results";
+import Photos from "./Photos";
 
 export default function Search() {
   const [word, setWord] = useState("Cat");
   const [loaded, setLoaded] = useState(false);
   const [dictionary, setDictionary] = useState(null);
   const [error, setError] = useState(false);
+  const [photos, setPhotos] = useState(null);
 
   function handleChange(event) {
     setWord(event.target.value);
@@ -32,16 +34,26 @@ export default function Search() {
     });
   }
 
+  function showPhotos(response) {
+    setPhotos(response.data.photos);
+  }
+
   function searchWord() {
     setError(false);
-    const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
-    axios.get(url).then(showDictionary).catch(handleError);
     function handleError(error) {
       if (error.response) {
         setError(true);
         setDictionary(null);
       }
     }
+    const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+    axios.get(url).then(showDictionary).catch(handleError);
+    const pexelsApiKey =
+      "B5mTvC5VPvN7pU1RCV21H76aktXebSp2jeqF6eQ5J6Bejj1TrlKSmAO7";
+    const pexelsUrl = `https://api.pexels.com/v1/search?query=${word}`;
+    axios
+      .get(pexelsUrl, { headers: { Authorization: pexelsApiKey } })
+      .then(showPhotos);
   }
 
   if (loaded && error === false) {
@@ -56,9 +68,13 @@ export default function Search() {
               autoFocus="true"
               onChange={handleChange}
             ></input>
-          </form>{" "}
+          </form>
         </section>
         <Results data={dictionary} />
+        <section>
+          {" "}
+          <Photos photos={photos} />
+        </section>
       </div>
     );
   } else if (error) {
