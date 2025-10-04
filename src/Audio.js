@@ -23,6 +23,7 @@ export default function Audio(props) {
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/453/original/output-onlinepngtools.png?1759566125"
         alt="listen-icon"
         width="20px"
+        className="audio"
         onClick={handlePlay}
       ></img>
     </div>
